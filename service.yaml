@@ -1,0 +1,11 @@
+name: care-plan-service
+port: 8309
+lang: python
+description: "care-plan-service \u2014 domain: ehr"
+http_deps:
+- ehr-service
+- care-teams-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
