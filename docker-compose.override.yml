@@ -1,7 +1,7 @@
 services:
   care-plan-service:
     build: .
-    container_name: ${NAME_UNDERSCORE}
+    container_name: care_plan_service
     depends_on:
       postgres:
         condition: service_healthy
